@@ -28,13 +28,9 @@ Lucas Vachon
 
 	•	Standard models (Black–Scholes, Heston, local vol) may not capture the autocall probability well.
 
-3. ML Angle
+3. Possible ML applications: Autocall Probability Estimation
 
-The project is about leveraging ML to better estimate risks and behavior of autocallables compared to traditional models.
-
-Possible ML applications: Autocall Probability Estimation
 **Train a classifier (logistic regression, random forest, gradient boosting) to estimate the probability of early redemption**
-
 
 Features for an SP500 Autocall ML Model :
 
@@ -69,7 +65,6 @@ If you want to capture historical path effects (important for autocall):
 	•	Min(S_t) since last observation
 	•	Max Drawdown since issuance
 	•	Cumulated Returns since issuance
-
 
 First ML Model to Start With: we just want to predict autocall probability (yes/no).
 
