@@ -1,7 +1,7 @@
 # Projet_Data_Finance
 Projet du Groupe x 
 
-Composition du groupe :
+**Composition du groupe :**
 
 Léo Linossier
 Martin Belot
@@ -9,7 +9,7 @@ Vincent Gachon
 Lucas Vachon
 
 
-Project Idea: ML for Autocallable Product Risk Management
+**Project Idea: ML for Autocallable Product Risk Management**
 
 1. Context
 	•	Autocallables are structured products, usually linked to equity indices (e.g. EuroStoxx 50), that:
