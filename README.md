@@ -9,7 +9,7 @@ Vincent Gachon
 Lucas Vachon
 
 
-**Project Idea: ML for Autocallable Product Risk Management**
+## Project Idea: ML for Autocallable Product Risk Management
 
 1. Context
 	•	Autocallables are structured products, usually linked to equity indices (e.g. EuroStoxx 50), that:
@@ -30,9 +30,9 @@ Lucas Vachon
 
 3. Possible ML applications: Autocall Probability Estimation
 
-**Train a classifier (logistic regression, random forest, gradient boosting) to estimate the probability of early redemption**
+### Train a classifier (logistic regression, random forest, gradient boosting) to estimate the probability of early redemption
 
-Features for an SP500 Autocall ML Model :
+## Features for an SP500 Autocall ML Model :
 
 The features should reflect market conditions at observation dates (We want to predict the autocall probability):
 
@@ -66,7 +66,7 @@ If you want to capture historical path effects (important for autocall):
 	•	Max Drawdown since issuance
 	•	Cumulated Returns since issuance
 
-First ML Model to Start With: we just want to predict autocall probability (yes/no).
+## First ML Model to Start With: we just want to predict autocall probability (yes/no).
 
 Model Choice
 	•	Logistic Regression → interpretable, fast, baseline.
