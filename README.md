@@ -79,3 +79,7 @@ Pipeline
 	2.	Train/test split
 	•	Example: train on 2010–2020, test on 2021–2023.
 	3.	Model training
+
+## Other models : Random forest, XGBoost
+
+Baseline model : logistic regression
