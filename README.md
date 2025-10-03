@@ -13,15 +13,22 @@ Lucas Vachon
 
 1. Context
 	•	Autocallables are structured products, usually linked to equity indices (e.g. EuroStoxx 50), that:
+
 	•	Pay periodic coupons if the underlying stays above a barrier.
+
 	•	Are autocalled (redeemed early) if the underlying is above a certain level on a call date.
+
 	•	Expose the investor to downside risk if the underlying breaches knock-in barriers.
+
 	•	For banks, pricing and risk-managing autocallables is challenging because:
+
 	•	The payoff is highly path-dependent.
+
 	•	Risk exposure (Greeks) is nonlinear and regime-dependent.
+
 	•	Standard models (Black–Scholes, Heston, local vol) may not capture the autocall probability well.
 
-2. ML Angle
+3. ML Angle
 
 The project is about leveraging ML to better estimate risks and behavior of autocallables compared to traditional models.
 
