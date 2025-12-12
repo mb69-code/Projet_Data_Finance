@@ -75,7 +75,7 @@ We incorporate fundamental data to ensure selected stocks possess strong valuati
 
 **3) Statistical Moments**
 
-Beyond standard volatility, we analyze the shape of the return distribution to detect "black swan" potential.
+Beyond standard volatility, we examine the distribution of returns to quantify tail risk i.e. the likelihood of rare, extreme negative events
 
 - Skewness: Measure of asymmetry in returns distribution.
 - Kurtosis: Measure of "tail risk" (extreme events).
