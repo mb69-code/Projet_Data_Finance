@@ -79,3 +79,33 @@ Beyond standard volatility, we examine the distribution of returns to quantify t
 
 - **Skewness:** Measure of asymmetry in returns distribution.
 - **Kurtosis:** Measure of "tail risk" (extreme events).
+
+
+# **1. K-Means Clustering (Benchmark)**
+
+**Objective**
+We utilize K-Means as a baseline algorithm to partition the S&P 500 universe into distinct "risk-return buckets." By grouping stocks with similar characteristics (volatility, liquidity, fundamentals), we can ensure our portfolio diversifies across different behavioral clusters rather than just industrial sectors.
+
+**Algorithm Overview**
+K-Means is an iterative algorithm that partitions a dataset of $n$ stocks into $k$ non-overlapping clusters. It aims to minimize the within-cluster sum of squares (variance), ensuring that stocks inside a cluster are as similar as possible.
+
+The objective function $J$ is defined as:
+
+$$J = \sum_{j=1}^{k} \sum_{x_i \in C_j} ||x_i - \mu_j||^2$$
+
+Where:
+* $k$ is the number of clusters.
+* $C_j$ is the set of points belonging to cluster $j$.
+* $\mu_j$ is the centroid (mean) of cluster $j$.
+* $||x_i - \mu_j||^2$ is the squared Euclidean distance between a stock $x_i$ and the centroid.
+
+**Implementation Steps**
+1.  **Feature Normalization:** All features (e.g., Volatility, P/E, Amihud Ratio) are scaled using Z-Score standardization to prevent large-magnitude features (like Market Cap) from dominating the distance metric.
+2.  **Optimal $k$ Selection:** We use the **Elbow Method** and **Silhouette Analysis** to determine the optimal number of clusters that best separates the data without overfitting.
+3.  **Cluster assignment:** Stocks are assigned to the nearest cluster centroid based on their feature vector.
+4.  **Centroid Update:** The centroids are recalculated as the mean of all stocks in the cluster. Steps 3 and 4 repeat until convergence.
+
+
+
+**Application for Insurers**
+For our specific client, K-Means helps identify "Defensive Clusters" (low beta, low volatility, high liquidity) vs. "Speculative Clusters." We focus our selection on the most stable clusters to match the insurer's liability constraints.
