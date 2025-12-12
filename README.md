@@ -8,8 +8,8 @@ This project focuses on applying Machine Learning techniques to the finance sect
 
 We are an asset manager that want to create a fund for a specific client that seeks a specific risk/return profile. Our fund contains equity, and we want to find the optmized approach to select to stocks we would like to include in our fund to match perfectly our client needs. 
 
+| Client | US Life Insurance Company |
 | :--- | :--- |
-| **Target Client** | **US Life Insurance Companies** |
 | **Profile** | Long-term horizon, low risk tolerance, low need for immediate income. |
 | **Key Constraints** | **High liquidity requirements** (to cover sudden claims/payouts). |
 
