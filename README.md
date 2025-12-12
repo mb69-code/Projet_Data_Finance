@@ -1,16 +1,6 @@
-# **Data Project (Group 8)**
+# **Equity Portfolio Construction & Stock Selection with ML**
 
-**Group composition**
-
-Léo Linossier
-
-Martin Belot
-
-Vincent Gachon
-
-Lucas Vachon
-
-# Project Idea: Equity Portfolio Construction & Stock Selection with ML
+**Group 8:** Léo Linossier, Martin Belot, Vincent Gachon, Lucas Vachon
 
 This project focuses on applying Machine Learning techniques to the finance sector, specifically for **Equity Portfolio Construction and Optimization**. By leveraging data-driven strategies, we aim to automate and enhance stock selection processes among a given list of stocks (e.g., S&P 500).
  
