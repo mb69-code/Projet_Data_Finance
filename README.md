@@ -61,7 +61,7 @@ These features quantify how an asset moves relative to itself and the broader ma
 - **Realized Volatility:** Annualized standard deviation of daily returns
 - **Beta ($\beta$):** Sensitivity to the broader market (e.g., S&P 500)
 - **Correlation:** The pairwise correlation of daily returns is often used directly as a "distance" metric for clustering.
-- **Momentum:** Returns over the past 3, 6 or 12 months
+- **Momentum:** Rolling average of returns over the past 3, 6 or 12 months
 - **Max drawdown:** The maximum observed percentage decline from a historical peak to a trough. It measures the worst-case scenario for an asset’s value preservation.
 
 **2) Fundamental Ratios**
