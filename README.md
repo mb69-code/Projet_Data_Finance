@@ -3,8 +3,11 @@
 **Group composition**
 
 Léo Linossier
+
 Martin Belot
+
 Vincent Gachon
+
 Lucas Vachon
 
 # Project Idea: Equity Portfolio Construction & Stock Selection with ML
