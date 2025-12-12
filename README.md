@@ -49,9 +49,14 @@ Quantitative Objectives: Target yield, maximum volatility threshold, minimum liq
 
 Stock data : $X^{\intercal}=[x^{(1)}, x^{(3)}, ... , x^{(N)}]$
 
-### **Features**
+### **Feature Engineering & Selection**
+
+To construct a robust clustering model and optimization engine, we selected features that capture three distinct dimensions of asset behavior: **Market Dynamics**, **Financial Health**, and **Statistical Tail Risk**.
 
 **1) Risk & Return Metrics**
+
+These features quantify how an asset moves relative to itself and the broader market.
+
 - Return: Average daily stock returns
 - Realized Volatility: Annualized standard deviation of daily returns
 - Beta ($\beta$): Sensitivity to the broader market (e.g., S&P 500)
@@ -60,12 +65,17 @@ Stock data : $X^{\intercal}=[x^{(1)}, x^{(3)}, ... , x^{(N)}]$
 - Max drawdown
 
 **2) Fundamental Ratios**
-These cluster stocks based on their company valuation and financial health.
+
+We incorporate fundamental data to ensure selected stocks possess strong valuation and solvency metrics. These cluster stocks based on their company valuation and financial health.
+
 - Valuation: P/E Ratio
 - Profitability: ROE (Return on Equity)
 - Leverage: Debt-to-Equity ratio
 - Size: Market Capitalization
 
 **3) Statistical Moments**
+
+Beyond standard volatility, we analyze the shape of the return distribution to detect "black swan" potential.
+
 - Skewness: Measure of asymmetry in returns distribution.
 - Kurtosis: Measure of "tail risk" (extreme events).
