@@ -46,7 +46,7 @@ Input: stock data $x$
 
 Time window ?
 
-Features: 
+### **Features**
 
 **1) Risk & Return Metrics**
 - Return: Average daily stock returns
