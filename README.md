@@ -84,9 +84,11 @@ Beyond standard volatility, we examine the distribution of returns to quantify t
 # **1. K-Means Clustering (Benchmark)**
 
 **Objective**
+
 We utilize K-Means as a baseline algorithm to partition the S&P 500 universe into distinct "risk-return buckets." By grouping stocks with similar characteristics (volatility, liquidity, fundamentals), we can ensure our portfolio diversifies across different behavioral clusters rather than just industrial sectors.
 
 **Algorithm Overview**
+
 K-Means is an iterative algorithm that partitions a dataset of $n$ stocks into $k$ non-overlapping clusters. It aims to minimize the within-cluster sum of squares (variance), ensuring that stocks inside a cluster are as similar as possible.
 
 The objective function $J$ is defined as:
