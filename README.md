@@ -70,7 +70,7 @@ We incorporate fundamental data to ensure selected stocks possess strong valuati
 
 - **Valuation:** P/E Ratio
 - **Profitability:** ROE (Return on Equity)
-- ***Leverage:** Debt-to-Equity ratio
+- **Leverage:** Debt-to-Equity ratio
 - **Size:** Market Capitalization
 
 **3) Statistical Moments**
