@@ -28,6 +28,7 @@ Input: stock data $x$
 Time window ?
 
 Features: 
+
 **1) Risk & Return Metrics**
 - Return: Average daily stock returns
 - Realized Volatility: Annualized standard deviation of daily returns
