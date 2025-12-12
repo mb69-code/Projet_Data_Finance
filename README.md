@@ -6,26 +6,25 @@ This project focuses on applying Machine Learning techniques to the finance sect
 
 # **Context**
 
-We are an asset manager that want to create a fund for a specific client that seeks a specific risk/return profile. Our fund contains equity, and we want to find the optmized approach to select to stocks we would like to include in our fund to match perfectly our client needs. 
+As asset managers for US Life Insurance companies, we seek to optimize the equity allocation of our fund. By leveraging Machine Learning, we aim to select stocks that maximize returns while strictly adhering to the client's low-risk and high-liquidity mandates.
 
 | Client | US Life Insurance Company |
 | :--- | :--- |
 | **Profile** | Long-term horizon, low risk tolerance, low need for immediate income. |
 | **Key Constraints** | **High liquidity requirements** (to cover sudden claims/payouts). |
 
-### Strategy:
+### **Strategy**
 
 US Life Insurance companies struggle to fund their liabilities: very long-term obligations (10–30 years) often linked to annuity or life insurance contracts, combined with high liquidity needs for claims. Traditional solutions available to insurers (primarily bond portfolios or standardized mixed funds) have shown their limits: they either fail to generate sufficient yield to cover long-term liabilities or take on too much market or liquidity risk, potentially compromising liability stability.
 
 Our fund aims to address this specific need by offering a simple and transparent portfolio that combines **liquidity**, **yield**, and **risk control**. We propose constructing a liquid portfolio, predominantly fixed-income, supplemented by equities (20–25%) to enhance expected returns. This includes quantified yield and volatility targets (rather than guaranteed promises) and quarterly rebalancing to limit risk. This approach would allow the insurer to meet its liquidity and solvency requirements while optimizing the portfolio's long-term return, unlike the standardized solutions currently on the market.
 
-Asset Allocation:
+#### Asset Allocation
 
-- Bonds (75–80%): Diversification between Government bonds (e.g., US Treasury 10Y) and Investment Grade Corporate bonds, with a duration focus adapted to liabilities.
-- Equities (20–25%): Selection of high-quality US stocks to improve expected yield while limiting volatility (e.g., JPM, 3M, PG).
+- **Bonds (75–80%):** Diversification between Government bonds (e.g., US Treasury 10Y) and Investment Grade Corporate bonds, with a duration focus adapted to liabilities.
+- **Equities (20–25%):** Selection of high-quality US stocks to improve expected yield while limiting volatility (e.g., JPM, 3M, PG).
 
 Quantitative Objectives: Target yield, maximum volatility threshold, minimum liquidity level, with quarterly monitoring to adjust the portfolio according to market evolution.
-
 
 
 ### 1. K-Means Clustering (Benchmark)
@@ -57,7 +56,7 @@ Features:
 - Momentum: Returns over the past 3, 6 or 12 months
 
 **2) Fundamental Ratios**
-- These cluster stocks based on their company valuation and financial health.
+These cluster stocks based on their company valuation and financial health.
 - Valuation: P/E Ratio
 - Profitability: ROE (Return on Equity)
 - Leverage: Debt-to-Equity ratio
