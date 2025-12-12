@@ -42,9 +42,12 @@ Quantitative Objectives: Target yield, maximum volatility threshold, minimum liq
 * **Method:** Use evolutionary principles (selection, crossover, mutation) to find the optimal combination of stocks.
 * **Fitness Function:** Maximizing the Sharpe Ratio or minimizing Volatility under specific constraints.
 
-Input: stock data $x$
 
-Time window ?
+# **Data**
+
+### **Input Data**
+
+Stock data : $\{x^{(1)}, x^{(3)}, ..., x^{(N)}}\$
 
 ### **Features**
 
