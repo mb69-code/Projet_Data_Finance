@@ -54,6 +54,7 @@ Time window ?
 - Beta ($\beta$): Sensitivity to the broader market (e.g., S&P 500)
 - Correlation: The pairwise correlation of daily returns is often used directly as a "distance" metric for clustering.
 - Momentum: Returns over the past 3, 6 or 12 months
+- Max drawdown
 
 **2) Fundamental Ratios**
 These cluster stocks based on their company valuation and financial health.
