@@ -8,10 +8,7 @@ This project focuses on applying Machine Learning techniques to the finance sect
 
 We are an asset manager that want to create a fund for a specific client that seeks a specific risk/return profile. Our fund contains equity, and we want to find the optmized approach to select to stocks we would like to include in our fund to match perfectly out$r client needs. 
 
-| Parameter | Description |
-| :--- | :--- |
 | **Target Client** | **US Life Insurance Companies** |
-| **Target Market** | USA |
 | **Profile** | Long-term horizon, low risk tolerance, low need for immediate income. |
 | **Key Constraints** | **High liquidity requirements** (to cover sudden claims/payouts). |
 
@@ -19,7 +16,7 @@ Strategy:
 
 US Life Insurance companies struggle to fund their liabilities: very long-term obligations (10–30 years) often linked to annuity or life insurance contracts, combined with high liquidity needs for claims. Traditional solutions available to insurers (primarily bond portfolios or standardized mixed funds) have shown their limits: they either fail to generate sufficient yield to cover long-term liabilities or take on too much market or liquidity risk, potentially compromising liability stability.
 
-Our project aims to address this specific need by offering a bespoke, simple, and transparent portfolio that combines liquidity, yield, and risk control. We propose constructing a liquid portfolio, predominantly fixed-income, supplemented by equities (20–25%) to enhance expected returns. This includes quantified yield and volatility targets (rather than guaranteed promises) and quarterly rebalancing to limit risk.
+Our fund aims to address this specific need by offering a simple and transparent portfolio that combines **liquidity**, **yield**, and **risk control**. We propose constructing a liquid portfolio, predominantly fixed-income, supplemented by equities (20–25%) to enhance expected returns. This includes quantified yield and volatility targets (rather than guaranteed promises) and quarterly rebalancing to limit risk.
 
 Detailed Proposed Strategy:
 
