@@ -47,7 +47,7 @@ Quantitative Objectives: Target yield, maximum volatility threshold, minimum liq
 
 ### **Input Data**
 
-Stock data : $X^{\intercal}=[x^{(1)}, x^{(3)}, ... , x^{(N)}]$
+SP500 Stock data : $X^{\intercal}=[x^{(1)}, x^{(3)}, ... , x^{(500)}]$
 
 ### **Feature Engineering & Selection**
 
@@ -57,25 +57,25 @@ To construct a robust clustering model and optimization engine, we selected feat
 
 These features quantify how an asset moves relative to itself and the broader market.
 
-- Return: Average daily stock returns
-- Realized Volatility: Annualized standard deviation of daily returns
-- Beta ($\beta$): Sensitivity to the broader market (e.g., S&P 500)
-- Correlation: The pairwise correlation of daily returns is often used directly as a "distance" metric for clustering.
-- Momentum: Returns over the past 3, 6 or 12 months
-- Max drawdown
+- **Return:** Average daily stock returns
+- **Realized Volatility:** Annualized standard deviation of daily returns
+- **Beta ($\beta$):** Sensitivity to the broader market (e.g., S&P 500)
+- **Correlation:** The pairwise correlation of daily returns is often used directly as a "distance" metric for clustering.
+- **Momentum:** Returns over the past 3, 6 or 12 months
+- **Max drawdown:** The maximum observed percentage decline from a historical peak to a trough. It measures the worst-case scenario for an asset’s value preservation.
 
 **2) Fundamental Ratios**
 
 We incorporate fundamental data to ensure selected stocks possess strong valuation and solvency metrics. These cluster stocks based on their company valuation and financial health.
 
-- Valuation: P/E Ratio
-- Profitability: ROE (Return on Equity)
-- Leverage: Debt-to-Equity ratio
-- Size: Market Capitalization
+- **Valuation:** P/E Ratio
+- **Profitability:** ROE (Return on Equity)
+- ***Leverage:** Debt-to-Equity ratio
+- **Size:** Market Capitalization
 
 **3) Statistical Moments**
 
 Beyond standard volatility, we examine the distribution of returns to quantify tail risk i.e. the likelihood of rare, extreme negative events
 
-- Skewness: Measure of asymmetry in returns distribution.
-- Kurtosis: Measure of "tail risk" (extreme events).
+- **Skewness:** Measure of asymmetry in returns distribution.
+- **Kurtosis:** Measure of "tail risk" (extreme events).
