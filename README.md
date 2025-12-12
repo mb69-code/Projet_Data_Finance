@@ -21,8 +21,8 @@ Our fund aims to address this specific need by offering a simple and transparent
 
 #### Asset Allocation
 
-- **Bonds (75–80%):** Diversification between Government bonds (e.g., US Treasury 10Y) and Investment Grade Corporate bonds, with a duration focus adapted to liabilities.
-- **Equities (20–25%):** Selection of high-quality US stocks to improve expected yield while limiting volatility (e.g., JPM, 3M, PG).
+- **Bonds (70%):** Diversification between Government bonds (e.g., US Treasury 10Y) and Investment Grade Corporate bonds, with a duration focus adapted to liabilities.
+- **Equities (30%):** Selection of high-quality US stocks to improve expected yield while limiting volatility (e.g., JPM, 3M, PG).
 
 Quantitative Objectives: Target yield, maximum volatility threshold, minimum liquidity level, with quarterly monitoring to adjust the portfolio according to market evolution.
 
