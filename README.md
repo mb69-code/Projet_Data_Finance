@@ -2,11 +2,38 @@
 
 **Group 8:** Léo Linossier, Martin Belot, Vincent Gachon, Lucas Vachon
 
-This project focuses on applying Machine Learning techniques to the finance sector, specifically for **Equity Portfolio Construction and Optimization**. By leveraging data-driven strategies, we aim to automate and enhance stock selection processes among a given list of stocks (e.g., S&P 500).
- 
-Implementation of clustering algorithms (Unsupervised Learning) such as *K-Means* or *Hierarchical Clustering* to group stocks with similar characteristics. Usage of clusters to select uncorrelated assets for better portfolio diversification.
+This project focuses on applying Machine Learning techniques to the finance sector, specifically for **Equity Portfolio Construction and Optimization**. By leveraging data-driven strategies, we aim to automate and enhance stock selection processes among a given list of stocks (e.g., S&P 500). Implementation of clustering algorithms (Unsupervised Learning) such as *K-Means* or *Hierarchical Clustering* to group stocks with similar characteristics. Usage of clusters to select uncorrelated assets for better portfolio diversification.
 
-We implement a three-step progressive approach to construct the optimal portfolio:
+# **Context**
+
+We are an asset manager that want to create a fund for a specific client that seeks a specific risk/return profile. Our fund contains equity, and we want to find the optmized approach to select to stocks we would like to include in our fund to match perfectly out$r client needs. 
+
+| Parameter | Description |
+| :--- | :--- |
+| **Target Client** | **US Life Insurance Companies** |
+| **Target Market** | USA |
+| **Profile** | Long-term horizon, low risk tolerance, low need for immediate income. |
+| **Key Constraints** | **High liquidity requirements** (to cover sudden claims/payouts). |
+
+Strategy:
+
+US Life Insurance companies struggle to fund their liabilities: very long-term obligations (10–30 years) often linked to annuity or life insurance contracts, combined with high liquidity needs for claims. Traditional solutions available to insurers (primarily bond portfolios or standardized mixed funds) have shown their limits: they either fail to generate sufficient yield to cover long-term liabilities or take on too much market or liquidity risk, potentially compromising liability stability.
+
+Our project aims to address this specific need by offering a bespoke, simple, and transparent portfolio that combines liquidity, yield, and risk control. We propose constructing a liquid portfolio, predominantly fixed-income, supplemented by equities (20–25%) to enhance expected returns. This includes quantified yield and volatility targets (rather than guaranteed promises) and quarterly rebalancing to limit risk.
+
+Detailed Proposed Strategy:
+
+Risk Profile: Low target volatility, with a focus on capital preservation and liquidity management.
+
+Asset Allocation:
+
+Bonds (75–80%): Diversification between Government bonds (e.g., US Treasury 10Y) and Investment Grade Corporate bonds, with a duration focus adapted to liabilities.
+
+Equities (20–25%): Selection of high-quality US stocks to improve expected yield while limiting volatility (e.g., JPM, 3M, PG).
+
+Quantitative Objectives: Target yield, maximum volatility threshold, minimum liquidity level, with quarterly monitoring to adjust the portfolio according to market evolution.
+
+This approach would allow the insurer to meet its liquidity and solvency requirements while optimizing the portfolio's long-term return, unlike the standardized solutions currently on the market.
 
 ### 1. K-Means Clustering (Benchmark)
 * **Goal:** Establish a baseline grouping of assets.
