@@ -47,7 +47,7 @@ Quantitative Objectives: Target yield, maximum volatility threshold, minimum liq
 
 ### **Input Data**
 
-Stock data : $\{x^{(1)}, x^{(3)}, ..., x^{(N)}}\$
+Stock data : $X^{\intercal}=[x^{(1)}, x^{(3)}, ... , x^{(N)}]$
 
 ### **Features**
 
