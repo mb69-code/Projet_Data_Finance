@@ -58,10 +58,10 @@ Features:
 
 **2) Fundamental Ratios**
 - These cluster stocks based on their company valuation and financial health.
-- Valuation: P/E Ratio, P/B Ratio, EV/EBITDA.
-- Profitability: ROE (Return on Equity), Net Margin.
-- Leverage: Debt-to-Equity ratio.
-- Size: Market Capitalization.
+- Valuation: P/E Ratio
+- Profitability: ROE (Return on Equity)
+- Leverage: Debt-to-Equity ratio
+- Size: Market Capitalization
 
 **3) Statistical Moments**
 - Skewness: Measure of asymmetry in returns distribution.
