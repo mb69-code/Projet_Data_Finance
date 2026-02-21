@@ -14,7 +14,7 @@ Retreiving fundamental financial data with Yahoo Finance (P/E Ratio, Beta, Marke
 
 ### 3) raw_dataset.csv
 
-With the stock_data.csv dataset, we calculate the following financial and statistical metrics: momentum, annualized volatility, skewness and kurtosis of the returns distribution.
+With the stock_data.csv dataset, we calculate the following financial and statistical metrics: momentum, annualized volatility, max drawdown, skewness and kurtosis of the returns distribution.
 
 Then we merge the dataset with the fundamentals dataset in order to obtain the raw_dataset.csv.
 
