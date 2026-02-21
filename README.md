@@ -45,42 +45,45 @@ Quantitative Objectives: Target yield, maximum volatility threshold, minimum liq
 
 # **Data**
 
-### **Input Data**
+## **1. Construction of the Dataset**
+---
 
-SP500 Stock data : $X^{\intercal}=[x^{(1)}, x^{(3)}, ... , x^{(500)}]$
+### **1.1. Dataset Description**
 
-### **Feature Engineering & Selection**
+We retrieve financial data $X^{\intercal}=[x^{(1)}, x^{(2)}, \dots, x^{(N)}]$ for constituents of the S&P 500 (large-cap), S&P 400 (mid-cap), and S&P 600 (small-cap) indices.
 
-To construct a robust clustering model and optimization engine, we selected features that capture three distinct dimensions of asset behavior: **Market Dynamics**, **Financial Health**, and **Statistical Tail Risk**.
+**Time Window:** `2022-01-01` to `2025-01-01`
 
-**1) Risk & Return Metrics**
+This three-year period is chosen to capture a diverse, representative range of recent market conditions without being distorted by the extreme volatility of the 2020 COVID-19 crash. Specifically, it encompasses:
+* **2022 (Bear Market):** Rising inflation, monetary tightening, and a growth/tech sell-off.
+* **2023 (Transition):** Market stabilization and gradual normalization.
+* **2024 (Bull Market):** A renewed rally driven by technology and AI stocks.
 
-These features quantify how an asset moves relative to itself and the broader market.
+Spanning these distinct macroeconomic shocks and sector rotations provides the variance needed to clearly discriminate between equity styles, such as growth vs. value, high-beta vs. defensive, and momentum trends, which is essential for meaningful clustering.
 
-- **Return:** Average daily stock returns
-- **Realized Volatility:** Annualized standard deviation of daily returns
-- **Beta ($\beta$):** Sensitivity to the broader market (e.g., S&P 500)
-- **Momentum:** Rolling average of returns over the past 3, 6 or 12 months
-- **Max drawdown:** The maximum observed percentage decline from a historical peak to a trough. It measures the worst-case scenario for an asset’s value preservation.
 
-- **Correlation:** The pairwise correlation of daily returns is often used directly as a "distance" metric for clustering. Used as a distance metric in the hierachical clustering.
+#### **Feature Engineering & Selection**
 
-**2) Fundamental Ratios**
+We engineered features across three dimensions to capture a comprehensive profile of asset behavior:
 
-We incorporate fundamental data to ensure selected stocks possess strong valuation and solvency metrics. These cluster stocks based on their company valuation and financial health.
+**1. Risk & Return Metrics**
+Quantifies an asset's price dynamics, trend persistence, and historical downside.
+* **Realized Volatility:** Annualized standard deviation of daily returns.
+* **Beta ($\beta$):** Sensitivity to broader market movements (e.g., S&P 500).
+* **12-1 Momentum:** Trailing 12-month return excluding the most recent month. (This standard financial metric captures persistent trends while filtering out short-term, 1-month reversal noise).
+* **Max Drawdown:** Maximum percentage drop from a historical peak (measures worst-case historical loss).
 
-- **Valuation:** P/E Ratio
-- **Profitability:** ROE (Return on Equity)
-- **Leverage:** Debt-to-Equity ratio
-- **Size:** Market Capitalization
+**2. Fundamental Metrics**
+Clusters stocks based on core financial health, valuation, and scale.
+* **Valuation:** Price-to-Earnings (P/E) Ratio.
+* **Profitability:** Return on Equity (ROE).
+* **Size:** Market Capitalization.
 
-**3) Statistical Moments**
+**3. Statistical Moments**
 
-Beyond standard volatility, we examine the distribution of returns to quantify tail risk i.e. the likelihood of rare, extreme negative events
-
-- **Skewness:** Measure of asymmetry in returns distribution.
-- **Kurtosis:** Measure of "tail risk" (extreme events).
-
+Evaluates the shape of the return distribution to assess tail risk (the likelihood of rare, extreme events).
+* **Skewness:** Asymmetry of the return distribution (e.g., negative skew indicates a higher probability of large losses).
+* **Kurtosis:** Fatness of the distribution tails (measures the frequency of extreme outliers).
 
 # **1. K-Means Clustering (Benchmark)**
 
