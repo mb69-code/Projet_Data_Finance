@@ -1,4 +1,5 @@
 # **Equity Portfolio Construction & Stock Selection with ML**
+---
 
 **Group 8:** Léo Linossier, Martin Belot, Vincent Gachon, Lucas Vachon
 
@@ -26,7 +27,6 @@ Our fund aims to address this specific need by offering a simple and transparent
 
 Quantitative Objectives: Target yield, maximum volatility threshold, minimum liquidity level, with quarterly monitoring to adjust the portfolio according to market evolution.
 
-
 ### 1. K-Means Clustering (Benchmark)
 * **Goal:** Establish a baseline grouping of assets.
 * **Method:** Partition stocks into $k$ distinct clusters based on risk/return profiles.
@@ -44,11 +44,7 @@ Quantitative Objectives: Target yield, maximum volatility threshold, minimum liq
 
 
 # **Data**
-
-## **1. Construction of the Dataset**
 ---
-
-### **1.1. Dataset Description**
 
 We retrieve financial data $X^{\intercal}=[x^{(1)}, x^{(2)}, \dots, x^{(N)}]$ for constituents of the S&P 500 (large-cap), S&P 400 (mid-cap), and S&P 600 (small-cap) indices.
 
