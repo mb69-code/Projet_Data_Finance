@@ -1,6 +1,6 @@
 # Scripts
 
-### eda.ipynb
+### 1) eda.ipynb
 
 This notebook constructs and presents the dataset used throughout the project and includes an exploratory data analysis to better understand its characteristics. The analysis covers:
 
@@ -9,13 +9,13 @@ This notebook constructs and presents the dataset used throughout the project an
 - **Correlation Analysis:** Checking relationships between features and assessing multicollinearity.  
 - **Outlier Detection and Feature Distributions:** Identifying extreme values and distribution shapes to determine the preprocessing steps required for clustering.
 
-### efficient-frontier-benchmark.ipynb
+### 2) efficient-frontier-benchmark.ipynb
 
 This notebook focuses on constructing the optimal portfolio using Modern Portfolio Theory (Markowitz) by maximizing the Sharpe ratio. It serves as a benchmark to evaluate the performance of stock selection methods implemented with machine learning techniques, such as clustering and genetic algorithms.  
 
 The approach represents the conventional method for portfolio construction, aiming to balance expected returns and risk (volatility). It uses only two features: annualized volatility and returns. The notebook is still under development, and at this stage, a test has been conducted using a subset of 10 stocks from the S&P500.
 
-### k-means.ipynb
+### 3) k-means.ipynb
 
 This notebook implements the K-Means algorithm as a benchmark machine learning method. It uses the 9-feature dataset prepared in `eda.ipynb` and applies the necessary preprocessing steps to ensure the data is suitable for clustering.  
 
