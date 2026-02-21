@@ -1,5 +1,4 @@
 # **Equity Portfolio Construction & Stock Selection with ML**
----
 
 **Group 8:** Léo Linossier, Martin Belot, Vincent Gachon, Lucas Vachon
 
@@ -44,7 +43,6 @@ Quantitative Objectives: Target yield, maximum volatility threshold, minimum liq
 
 
 # **Data**
----
 
 We retrieve financial data $X^{\intercal}=[x^{(1)}, x^{(2)}, \dots, x^{(N)}]$ for constituents of the S&P 500 (large-cap), S&P 400 (mid-cap), and S&P 600 (small-cap) indices.
 
