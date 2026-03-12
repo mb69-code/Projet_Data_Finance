@@ -3,7 +3,7 @@
 **Group 8:** Léo Linossier, Martin Belot, Vincent Gachon, Lucas Vachon
 
 <p align="center">
-  <img src="Présentation/bienvenue.png" width="200">
+  <img src="Présentation/bienvenue.png" width="250">
 </p>
 
 This project focuses on applying Machine Learning techniques to the finance sector, specifically for **Equity Portfolio Construction and Optimization**. By leveraging data-driven strategies, we aim to automate and enhance stock selection processes among a given list of stocks (e.g., S&P 500). Implementation of clustering algorithms (Unsupervised Learning) such as *K-Means* or *Hierarchical Clustering* to group stocks with similar characteristics. Usage of clusters to select uncorrelated assets for better portfolio diversification.
