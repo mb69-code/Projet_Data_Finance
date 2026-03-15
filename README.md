@@ -109,14 +109,14 @@ Where:
 3.  **Cluster assignment:** Stocks are assigned to the nearest cluster centroid based on their feature vector.
 4.  **Centroid Update:** The centroids are recalculated as the mean of all stocks in the cluster. Steps 3 and 4 repeat until convergence.
 
-### 2. Hierarchical Clustering
+# **2. Hierarchical Clustering**
 
 * **Goal:** Identify the hierarchical structure of relationships between assets in order to improve diversification.
 * **Method:** Apply agglomerative clustering to build a **dendrogram**, which represents the similarity structure between stocks based on their correlation matrix.
 * **Portfolio Construction:** The resulting hierarchy is used to implement the **Hierarchical Risk Parity (HRP)** allocation method, which distributes portfolio weights recursively across clusters according to their variance.
 * **Advantage:** Unlike K-Means, this approach does not require specifying a fixed number of clusters $k$ and is able to capture nested correlations between assets.
 
-### 3. Genetic Algorithm (Optimization)
+# **3. Genetic Algorithm (Optimization)**
 
 * **Goal:** Search for an optimal portfolio composition among a large universe of stocks.
 * **Method:** Implement an evolutionary optimization process inspired by natural selection, where candidate portfolios evolve through **selection**, **crossover**, and **mutation** operations.
