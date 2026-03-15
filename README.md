@@ -111,10 +111,28 @@ Where:
 
 # **2. Hierarchical Clustering**
 
-* **Goal:** Identify the hierarchical structure of relationships between assets in order to improve diversification.
-* **Method:** Apply agglomerative clustering to build a **dendrogram**, which represents the similarity structure between stocks based on their correlation matrix.
-* **Portfolio Construction:** The resulting hierarchy is used to implement the **Hierarchical Risk Parity (HRP)** allocation method, which distributes portfolio weights recursively across clusters according to their variance.
-* **Advantage:** Unlike K-Means, this approach does not require specifying a fixed number of clusters $k$ and is able to capture nested correlations between assets.
+* **Goal:** Identify the hierarchical structure of relationships between assets to improve diversification and risk allocation.
+* **Algorithm Overview:** Agglomerative clustering progressively merges assets or clusters based on their similarity. The distance between assets is derived from the correlation matrix:
+
+\[
+d_{i,j} = \sqrt{\frac{1 - \rho_{i,j}}{2}}
+\]
+
+where $\rho_{i,j}$ is the correlation between asset $i$ and asset $j$.
+
+* **Implementation Steps:** Build a **dendrogram** representing the hierarchical relationships between stocks, then use this structure to allocate portfolio weights with the **Hierarchical Risk Parity (HRP)** method, which distributes capital across clusters according to their risk.
+
+### 3. Genetic Algorithm (Optimization)
+* **Goal:** Optimize portfolio weights and select the best combination of assets under risk and diversification constraints.
+* **Algorithm Overview:** A population of candidate portfolios evolves through **selection**, **crossover**, and **mutation** operations. Each portfolio is evaluated using a fitness function such as the **Sharpe Ratio**:
+
+\[
+S = \frac{E[R_p] - r_f}{\sigma_p}
+\]
+
+where $E[R_p]$ is the expected portfolio return, $r_f$ the risk-free rate, and $\sigma_p$ the portfolio volatility.
+
+* **Implementation Steps:** Initialize a population of portfolios $w = (w_1,\dots,w_n)$ satisfying $\sum_{i=1}^{n} w_i = 1$. At each generation, the best-performing portfolios are selected, recombined, and slightly mutated to explore new allocations until convergence toward an optimal solution.
 
 # **3. Genetic Algorithm (Optimization)**
 
