@@ -11,9 +11,9 @@ This notebook constructs and presents the dataset used throughout the project an
 
 ### 2) efficient-frontier-benchmark.ipynb
 
-This notebook focuses on constructing the optimal portfolio using Modern Portfolio Theory (Markowitz) by maximizing the Sharpe ratio. It serves as a benchmark to evaluate the performance of stock selection methods implemented with machine learning techniques, such as clustering and genetic algorithms.  
+This notebook focuses on constructing the optimal portfolio for 10 US stocks using Modern Portfolio Theory (Markowitz) by maximizing the Sharpe ratio. The goal is to understand the classical approach to portfolio optimization and allocation, emphasizing the balance between expected returns and risk (volatility).
 
-The approach represents the conventional method for portfolio construction, aiming to balance expected returns and risk (volatility). It uses only two features: annualized volatility and returns. The notebook is still under development, and at this stage, a test has been conducted using a subset of 10 stocks from the S&P500.
+The method uses only two features: annualized volatility and returns. To get familiar with the concepts, a preliminary test has been carried out on a subset of 10 stocks from the S&P500. 
 
 ### 3) k-means.ipynb
 
