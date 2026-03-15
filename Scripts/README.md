@@ -9,7 +9,7 @@ This notebook constructs and presents the dataset used throughout the project an
 - **Correlation Analysis:** Checking relationships between features and assessing multicollinearity.  
 - **Outlier Detection and Feature Distributions:** Identifying extreme values and distribution shapes to determine the preprocessing steps required for clustering.
 
-### 2) efficient-frontier-markowitz.ipynb
+### 2) markowitz.ipynb
 
 This notebook focuses on constructing the optimal portfolio for 10 US stocks using Modern Portfolio Theory (Markowitz) by maximizing the Sharpe ratio. The goal is to understand the classical approach to portfolio optimization and allocation, emphasizing the balance between expected returns and risk (volatility).
 
