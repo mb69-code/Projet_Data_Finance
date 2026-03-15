@@ -134,6 +134,10 @@ where $E[R_p]$ is the expected portfolio return, $r_f$ the risk-free rate, and $
 
 * **Implementation Steps:** Initialize a population of portfolios $w = (w_1,\dots,w_n)$ satisfying $\sum_{i=1}^{n} w_i = 1$. At each generation, the best-performing portfolios are selected, recombined, and slightly mutated to explore new allocations until convergence toward an optimal solution.
 
+* **Fitness Function**
+
+$$ \text{Score} = \underbrace{w_R \cdot R_p}_{\text{Return}} - \underbrace{w_\sigma \cdot \sigma_p}_{\text{Volatility}} - \underbrace{w_\beta \cdot |\beta_p - \beta^*|}_{\beta \text{ Deviation}} - \underbrace{w_{DD} \cdot |DD_{\max}|}_{\text{Drawdown}} + \underbrace{w_F \cdot S_F}_{\textcolor{mypurple}{\text{Fundamentals}}}$$
+
 
 **Application for Insurers**
 For our specific client, K-Means helps identify "Defensive Clusters" (low beta, low volatility, high liquidity) vs. "Speculative Clusters." We focus our selection on the most stable clusters to match the insurer's liability constraints.
