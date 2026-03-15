@@ -114,9 +114,9 @@ Where:
 * **Goal:** Identify the hierarchical structure of relationships between assets to improve diversification and risk allocation.
 * **Algorithm Overview:** Agglomerative clustering progressively merges assets or clusters based on their similarity. The distance between assets is derived from the correlation matrix:
 
-\[
+$$
 d_{i,j} = \sqrt{\frac{1 - \rho_{i,j}}{2}}
-\]
+$$
 
 where $\rho_{i,j}$ is the correlation between asset $i$ and asset $j$.
 
@@ -126,27 +126,13 @@ where $\rho_{i,j}$ is the correlation between asset $i$ and asset $j$.
 * **Goal:** Optimize portfolio weights and select the best combination of assets under risk and diversification constraints.
 * **Algorithm Overview:** A population of candidate portfolios evolves through **selection**, **crossover**, and **mutation** operations. Each portfolio is evaluated using a fitness function such as the **Sharpe Ratio**:
 
-\[
+$$
 S = \frac{E[R_p] - r_f}{\sigma_p}
-\]
+$$
 
 where $E[R_p]$ is the expected portfolio return, $r_f$ the risk-free rate, and $\sigma_p$ the portfolio volatility.
 
 * **Implementation Steps:** Initialize a population of portfolios $w = (w_1,\dots,w_n)$ satisfying $\sum_{i=1}^{n} w_i = 1$. At each generation, the best-performing portfolios are selected, recombined, and slightly mutated to explore new allocations until convergence toward an optimal solution.
-
-# **3. Genetic Algorithm (Optimization)**
-
-* **Goal:** Search for an optimal portfolio composition among a large universe of stocks.
-* **Method:** Implement an evolutionary optimization process inspired by natural selection, where candidate portfolios evolve through **selection**, **crossover**, and **mutation** operations.
-* **Representation:** Each individual represents a vector of portfolio weights $w = (w_1, ..., w_n)$ satisfying $\sum_{i=1}^{n} w_i = 1$.
-* **Fitness Function:** Portfolios are evaluated using a performance metric such as the **Sharpe Ratio**
-
-$$
-S = \frac{E[R_p] - r_f}{\sigma_p}
-$$
-
-where $E[R_p]$ is the expected portfolio return, $r_f$ the risk-free rate, and $\sigma_p$ the portfolio volatility.
-
 
 
 **Application for Insurers**
